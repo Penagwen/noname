@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="characterSelection">
+        <div class="card elf">
+            <span>ELF</span>
+            <hr>
+            <img src="./0x72_DungeonTilesetII_v1.4/frames/elf_m_idle_anim_f0.png">
+            <br>
+            <input class="gender" type="button" value="m" onclick="swichGender(this.parentNode)">
+            <div class="stats">
+                <p class="health">hp - 100</p>
+                <p class="defence">def - 10</p>
+                <p class="attack">attk - 10</p>
+                <p class="speed">sp - 5</p>
+            </div>
+            <input type="button" value="Select" onclick="selectCharacter(this.parentNode.className.replace('card ', ''))">
+        </div>
+        <div class="card knight">
+            <span>KNIGHT</span>
+            <hr>
+            <img src="./0x72_DungeonTilesetII_v1.4/frames/knight_m_idle_anim_f0.png">
+            <br>
+            <input class="gender" type="button" value="m" onclick="swichGender(this.parentNode)">
+            <div class="stats">
+                <p class="health">hp - 100</p>
+                <p class="defence">def - 10</p>
+                <p class="attack">attk - 10</p>
+                <p class="speed">sp - 5</p>
+            </div>
+            <input type="button" value="Select" onclick="selectCharacter(this.parentNode.className.replace('card ', ''))">
+        </div>
+        <div class="card wizzard">
+            <span>WIZZARD</span>
+            <hr>
+            <img src="./0x72_DungeonTilesetII_v1.4/frames/wizzard_m_idle_anim_f0.png">
+            <br>
+            <input class="gender" type="button" value="m" onclick="swichGender(this.parentNode)">
+            <div class="stats">
+                <p class="health">hp - 100</p>
+                <p class="defence">def - 10</p>
+                <p class="attack">attk - 10</p>
+                <p class="speed">sp - 5</p>
+            </div>
+            <input type="button" value="Select" onclick="selectCharacter(this.parentNode.className.replace('card ', ''))">
+        </div>
+        <div class="card lizard">
+            <span>LIZARD</span>
+            <hr>
+            <img src="./0x72_DungeonTilesetII_v1.4/frames/lizard_m_idle_anim_f0.png">
+            <br>
+            <input class="gender" type="button" value="m" onclick="swichGender(this.parentNode)">
+            <div class="stats">
+                <p class="health">hp - 100</p>
+                <p class="defence">def - 10</p>
+                <p class="attack">attk - 10</p>
+                <p class="speed">sp - 5</p>
+            </div>
+            <input type="button" value="Select" onclick="selectCharacter(this.parentNode.className.replace('card ', ''))">
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+
+    <script src="./page.js"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
